@@ -45,3 +45,26 @@ public  class SecondClass:FirstClass
 
 
 
+//2-implicit Operator
+public class FirstClass2
+{
+    private readonly SecondClass2 _SecondClass2;
+    public FirstClass2(SecondClass2 secondClass2)
+    {
+        _SecondClass2 = secondClass2;
+    }
+
+    public static implicit operator FirstClass2(SecondClass2 B)
+    {
+        B.Name = "Waseem";
+        return new FirstClass2(B);
+    }
+    public int Id { get; set; }
+
+}
+public class SecondClass2 
+{
+    public string Name { get; set; }
+}
+
+
