@@ -5,15 +5,24 @@ var pro = new Program2();
 var secondClass = new SecondClass();
 
 var x = pro.doSomthing(secondClass);
-Console.WriteLine(x);
-//Console.WriteLine(x.Name);
+//Console.WriteLine(x.Name); error you must cat to SecondClass Class
+// Console.WriteLine(x.Id);
+var Y = (SecondClass)x;
+Console.WriteLine(Y.Name);
+Console.WriteLine(x.Id);
 
 
 
 
-/*How we can return data type differant in method return type * class B has method return A data type however in actual it's return B type how do it * 1- by inheritance B inherit from A we can retun *  
- *  
+
+/*How we can return data type differant in method return type 
+ * 
+ * class B has method return A data type however in actual it's return B type how do it 
  */
+
+//1 - by inheritance B inherit from A we can retun  
+
+
 public class Program2
 {
   
@@ -33,3 +42,6 @@ public  class SecondClass:FirstClass
 {
     public string Name { get; set; }
 }
+
+
+
