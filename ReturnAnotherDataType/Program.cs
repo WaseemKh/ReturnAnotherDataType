@@ -11,10 +11,7 @@ Console.WriteLine(x);
 
 
 
-/*How we can return data type differant in method return type 
- *  class B has method return A data type howeaver  in actual it's return B type how do it
- *  1- by inhertance  B inhert from A we can retun 
- *  
+/*How we can return data type differant in method return type * class B has method return A data type however in actual it's return B type how do it * 1- by inheritance B inherit from A we can retun *  
  *  
  */
 public class Program2
